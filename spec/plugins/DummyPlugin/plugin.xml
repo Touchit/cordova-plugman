@@ -143,4 +143,15 @@
         </js-module>
     </platform>
 
+  <!-- windows81 -->
+  <platform name="windows81">
+    <config-file target="config.xml" parent="/*">
+      <feature id="dummyPlugin" required="true" version="1.0.0.0"/>
+    </config-file>
+
+    <source-file src="src/windows81/dummer.js"/>
+    <js-module src="www/dummyplugin.js" name="Dummy">
+      <clobbers target="dummy" />
+    </js-module>
+  </platform>
 </plugin>
