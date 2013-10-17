@@ -117,7 +117,7 @@
         <source-file src="src/wp8/NotHere.cs" />
     </platform>
 
-    <!-- wp8 -->
+    <!-- windows8 -->
     <platform name="windows8">
         <config-file target="config.xml" parent="/*">
             <feature name="FaultyPlugin">
@@ -129,5 +129,19 @@
 
         <!-- does not exist -->
         <source-file src="src/windows8/NotHere.js" />
+    </platform>
+
+    <!-- windows8 -->
+    <platform name="windows81">
+      <config-file target="config.xml" parent="/*">
+        <feature name="FaultyPlugin">
+          <param name="windows81-package" value="FaultyPlugin"/>
+        </feature>
+      </config-file>
+
+      <source-file src="src/windows81/faultyPlugin.js" />
+
+      <!-- does not exist -->
+      <source-file src="src/windows81/NotHere.js" />
     </platform>
 </plugin>
